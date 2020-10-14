@@ -12,7 +12,9 @@ RUN apt update && \
 	wget \
 	git \
 	gcc-arm-linux-gnueabihf \
-	g++-arm-linux-gnueabihf
+	g++-arm-linux-gnueabihf \
+	libx11-dev \
+	libxext-dev
 
 # Set the cross compilation toolchain (armhfv7)
 ENV CC=arm-linux-gnueabihf-gcc
